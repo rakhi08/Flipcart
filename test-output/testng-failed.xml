@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="testng_listeners.CustomListener"/>
+  </listeners>
+  <test name="HomePage Test(failed)" parallel="methods">
+    <classes>
+      <class name="TestCases.testHomePage">
+        <methods>
+          <include name="m_testHomePage" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- TestCases.testHomePage -->
+    </classes>
+  </test> <!-- HomePage Test(failed) -->
+  <test name="SearchPage Test(failed)" parallel="methods">
+    <classes>
+      <class name="TestCases.TestSearchPage">
+        <methods>
+          <include name="testSearchResults" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestCases.TestSearchPage -->
+    </classes>
+  </test> <!-- SearchPage Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
